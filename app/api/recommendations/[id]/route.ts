@@ -48,13 +48,8 @@ export async function GET(
     }
 
     // Increment view count asynchronously (don't wait for it)
-    supabase.rpc('increment_recommendation_view_count', {
+    void supabase.rpc('increment_recommendation_view_count', {
       recommendation_id: id,
-    }).then(() => {
-      // View count incremented successfully
-    }).catch((err) => {
-      // Log but don't fail the request
-      console.error('Failed to increment view count:', err);
     });
 
     // Transform database record to API response format
