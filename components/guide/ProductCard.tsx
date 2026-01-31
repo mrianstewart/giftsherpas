@@ -1,6 +1,8 @@
 // components/guide/ProductCard.tsx
 // Reusable product card component for MDX guides
 
+'use client';
+
 interface ProductCardProps {
   title: string;
   priceRange: string;

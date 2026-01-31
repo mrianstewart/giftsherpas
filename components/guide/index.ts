@@ -5,3 +5,4 @@ export { ProductCard } from './ProductCard';
 export { OffBeatPathCard } from './OffBeatPathCard';
 export { AISherpaButton } from './AISherpaButton';
 export { FAQSection } from './FAQSection';
+export { FAQItem } from './FAQItem';
